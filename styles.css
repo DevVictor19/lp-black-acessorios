@@ -1,0 +1,31 @@
+:root {
+  --black: #0d0d17;
+  --black-75: rgba(13, 13, 23, 0.75);
+  --black-50: rgba(13, 13, 23, 0.5);
+  --black-25: rgba(13, 13, 23, 0.25);
+  --black-10: rgba(13, 13, 23, 0.1);
+  --black-5: rgba(13, 13, 23, 0.05);
+  --yellow: #d0a616;
+  --yellow-light: #ccc973;
+  --orange: #ff6a00;
+  --pink: #ee0979;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--black);
+}
+
+body {
+  font-family: "Sarabun", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.heading {
+  font-family: "Bebas Neue", cursive;
+  color: white;
+}
