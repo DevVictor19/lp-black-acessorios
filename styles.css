@@ -22,10 +22,66 @@ html {
 body {
   font-family: "Sarabun", sans-serif;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1600px;
 }
 
 .heading {
   font-family: "Bebas Neue", cursive;
+  font-size: 35px;
+  line-height: 42px;
+  letter-spacing: 2px;
+}
+
+/* header */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  padding: 0 64px;
+  border-bottom: 1px solid var(--yellow-light);
+}
+
+.main-header__brand-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-header__logo {
+  background-color: var(--black);
+  margin-right: 8px;
+}
+
+.main-header__heading {
+  margin: 0;
+  color: var(--yellow-light);
+  font-size: 35px;
+  line-height: 42px;
+}
+
+.main-header__navigation-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.main-header__navigation-item {
+  margin-left: 16px;
+}
+
+.main-header__navigation-item a {
+  text-decoration: none;
+  color: var(--yellow-light);
+  font-size: 22px;
+  line-height: 29px;
+}
+
+.main-header__navigation-item a:hover,
+.main-header__navigation-item a:active {
   color: white;
 }
