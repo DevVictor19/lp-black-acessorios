@@ -7,8 +7,6 @@
   --black-5: rgba(13, 13, 23, 0.05);
   --yellow: #d0a616;
   --yellow-light: #ccc973;
-  --orange: #ff6a00;
-  --pink: #ee0979;
 }
 
 * {
@@ -17,6 +15,7 @@
 
 html {
   background-color: var(--black);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -24,12 +23,37 @@ body {
   padding: 0;
   margin: 0 auto;
   max-width: 100rem;
+  height: 4000px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
 }
 
 .heading {
   font-family: "Bebas Neue", cursive;
   font-size: 2.18rem;
   line-height: 2.6rem;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #ff6a00 7.49%, #ee0979 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-btn {
+  width: 258px;
+  height: 56px;
+  display: inline-block;
+  text-align: center;
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 22px;
+  padding-top: 13px;
+  line-height: 29px;
 }
 
 /* header */
@@ -44,7 +68,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 4rem;
+  height: 64px;
   width: 100%;
   max-width: 100rem;
   padding: 0 4rem;
@@ -64,7 +88,6 @@ body {
 }
 
 .main-header__heading {
-  margin: 0;
   color: var(--yellow-light);
   font-size: 2.1875rem;
   line-height: 2.625rem;
@@ -94,14 +117,14 @@ body {
 
 .main-header__hamburger-menu {
   display: none;
-  width: 2rem;
-  height: 1.5625rem;
+  width: 32px;
+  height: 25px;
   cursor: pointer;
 }
 .main_header__hamburger-menu-bar {
   display: block;
   width: 100%;
-  height: 0.1875rem;
+  height: 3px;
   border-radius: 8px;
   background-color: var(--yellow-light);
 }
@@ -153,8 +176,8 @@ body {
   position: absolute;
   top: 1rem;
   right: 1.375rem;
-  width: 2.1875rem;
-  height: 2rem;
+  width: 35px;
+  height: 32px;
   cursor: pointer;
 }
 
@@ -163,8 +186,8 @@ body {
   top: 50%;
   left: 0;
   display: block;
-  width: 2.1875rem;
-  height: 0.1875rem;
+  width: 35px;
+  height: 3px;
   background: var(--yellow-light);
   border-radius: 4px;
   transform: rotate(-45deg);
@@ -175,13 +198,76 @@ body {
   top: 50%;
   left: 0;
   display: block;
-  width: 2.1875rem;
-  height: 0.1875rem;
+  width: 35px;
+  height: 3px;
   background: var(--yellow-light);
   border-radius: 4px;
   transform: rotate(45deg);
 }
 
+/* main section */
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 100px;
+  padding: 0 4rem;
+}
+
+.main-section__company-description {
+  max-width: 619px;
+}
+
+.main-section__company-description-heading {
+  margin-bottom: 2rem;
+  font-size: 4.4375rem;
+  line-height: 5.3125rem;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.main-section__company-description-paragraph {
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  color: var(--yellow-light);
+}
+
+.main-section__company-description-cta {
+  border: 1px solid var(--yellow-light);
+  color: var(--yellow-light);
+}
+
+.main-section__company-description-cta:hover,
+.main-section__company-description-cta:active {
+  background: linear-gradient(90deg, #ff6a00 7.49%, #ee0979 100%);
+  color: white;
+  border: none;
+}
+
+.main-section__founder-description {
+  max-width: 546px;
+  text-align: center;
+}
+
+.main-section__founder-description-heading {
+  margin-top: 21px;
+}
+
+.main-section__founder-description-subheading {
+  font-weight: 275;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  color: var(--yellow-light);
+}
+
+.main-section__founder-description-ig {
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  color: var(--yellow-light);
+}
+
+/* responsivo */
 @media screen and (max-width: 75rem) {
   .main-header__container {
     padding: 0 2rem;
