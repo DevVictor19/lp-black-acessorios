@@ -451,18 +451,12 @@ p {
 
 /* responsivo  1200px*/
 @media screen and (max-width: 75rem) {
-  .main-header__container {
-    padding: 0 2rem;
-  }
-
+  .main-header__container,
   .main-section {
     padding: 0 2rem;
   }
 
-  .cases {
-    padding: 7.5rem 2rem 12rem;
-  }
-
+  .cases,
   .chargers {
     padding: 7.5rem 2rem 12rem;
   }
@@ -470,10 +464,7 @@ p {
 
 /* 1024px */
 @media screen and (max-width: 64rem) {
-  .main-header__container {
-    padding: 0 1.5rem;
-  }
-
+  .main-header__container,
   .main-section {
     padding: 0 1.5rem;
   }
@@ -492,10 +483,7 @@ p {
     margin-top: 6.8125rem;
   }
 
-  .cases {
-    padding: 7.5rem 1.5rem 12rem;
-  }
-
+  .cases,
   .chargers {
     padding: 7.5rem 1.5rem 12rem;
   }
@@ -503,13 +491,11 @@ p {
 
 /* 950px */
 @media screen and (max-width: 60.3125rem) {
-  .cases {
-    flex-direction: column;
-  }
   .cases__secondary-info {
     margin-left: auto;
   }
 
+  .cases,
   .chargers {
     flex-direction: column;
   }
@@ -587,12 +573,18 @@ p {
     text-align: center;
   }
 
-  .cases__primary-info-heading {
+  .cases__primary-info-heading,
+  .cases__secondary-info-heading,
+  .chargers__primary-info-heading,
+  .chargers__secondary-info-heading {
     font-size: 3.125rem;
     line-height: 3.75rem;
   }
 
-  .cases__primary-info-cta {
+  .cases__primary-info-cta,
+  .cases__secondary-info-cta,
+  .chargers__primary-info-cta,
+  .chargers__secondary-info-cta {
     width: 100%;
     margin-top: 2rem;
   }
@@ -603,44 +595,14 @@ p {
     margin: 322px 0 0;
   }
 
-  .cases__secondary-info-heading {
-    font-size: 3.125rem;
-    line-height: 3.75rem;
-  }
-
   .cases__secondary-info-paragraph {
     margin-left: auto;
-  }
-
-  .cases__secondary-info-cta {
-    width: 100%;
-    margin-top: 2rem;
-  }
-
-  .chargers__primary-info-heading {
-    font-size: 3.125rem;
-    line-height: 3.75rem;
-  }
-
-  .chargers__primary-info-cta {
-    width: 100%;
-    margin-top: 2rem;
   }
 
   .chargers__secondary-info {
     width: 100%;
     max-width: none;
     margin: 322px 0 0;
-  }
-
-  .chargers__secondary-info-heading {
-    font-size: 3.125rem;
-    line-height: 3.75rem;
-  }
-
-  .chargers__secondary-info-cta {
-    width: 100%;
-    margin-top: 2rem;
   }
 }
 
