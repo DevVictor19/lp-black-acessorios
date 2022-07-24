@@ -5,6 +5,7 @@
   --black-25: rgba(13, 13, 23, 0.25);
   --black-10: rgba(13, 13, 23, 0.1);
   --black-5: rgba(13, 13, 23, 0.05);
+  --white: #d3d3d3;
   --yellow: #d0a616;
   --yellow-light: #ccc973;
 }
@@ -33,6 +34,11 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent !important;
+  outline: none !important;
 }
 
 .heading {
@@ -80,7 +86,7 @@ p {
   margin: 0 auto;
   border-bottom: 1px solid var(--yellow-light);
   background-color: rgba(13, 13, 23, 0.98);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(4px);
 }
 
 .main-header__brand-container {
@@ -231,7 +237,7 @@ p {
   font-size: 4.4375rem;
   line-height: 5.3125rem;
   letter-spacing: 3px;
-  color: #fff;
+  color: var(--white);
 }
 
 .main-section__company-description-paragraph {
@@ -275,6 +281,81 @@ p {
   color: var(--yellow-light);
 }
 
+/* capas */
+.cases {
+  padding: 7.5rem 4rem 12rem;
+  background-image: url("./images/capas-iphone.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.cases__primary-info {
+  max-width: 515px;
+  color: var(--yellow-light);
+}
+
+.cases__primary-info-heading {
+  font-weight: 400;
+  font-size: 6.3125rem;
+  line-height: 7.5625rem;
+}
+
+.cases__primary-info-paragraph {
+  max-width: 370px;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  margin-top: 1rem;
+}
+
+.cases__primary-info-cta {
+  border: 2px solid var(--yellow-light);
+  color: var(--yellow-light);
+  margin-top: 2.5rem;
+}
+
+.cases__primary-info-cta:hover,
+.cases__primary-info-cta:active {
+  background-color: var(--yellow-light);
+  color: var(--black);
+}
+
+.cases__secondary-info {
+  max-width: 320px;
+  margin-top: 16.9375rem;
+  text-align: right;
+  color: var(--white);
+}
+
+.cases__secondary-info-heading {
+  font-size: 4.4375rem;
+  line-height: 5.3125rem;
+  letter-spacing: 1px;
+}
+
+.cases__secondary-info-paragraph {
+  max-width: 320px;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  margin-top: 1rem;
+}
+
+.cases__secondary-info-cta {
+  border: 2px solid var(--white);
+  color: var(--white);
+  margin-top: 2.5rem;
+}
+
+.cases__secondary-info-cta:hover,
+.cases__secondary-info-cta:active {
+  background-color: var(--white);
+  color: var(--black);
+}
+
 /* responsivo  1200px*/
 @media screen and (max-width: 75rem) {
   .main-header__container {
@@ -284,11 +365,19 @@ p {
   .main-section {
     padding: 0 2rem;
   }
+
+  .cases {
+    padding: 7.5rem 2rem 12rem;
+  }
 }
 
 /* 1024px */
 @media screen and (max-width: 64rem) {
   .main-header__container {
+    padding: 0 1.5rem;
+  }
+
+  .main-section {
     padding: 0 1.5rem;
   }
 
@@ -304,6 +393,20 @@ p {
 
   .main-section__founder-description {
     margin-top: 6.8125rem;
+  }
+
+  .cases {
+    padding: 7.5rem 1.5rem 12rem;
+  }
+}
+
+/* 950px */
+@media screen and (max-width: 60.3125rem) {
+  .cases {
+    flex-direction: column;
+  }
+  .cases__secondary-info {
+    margin-left: auto;
   }
 }
 
@@ -370,6 +473,36 @@ p {
     line-height: 1.125rem;
     margin-top: 56px;
     text-align: center;
+  }
+
+  .cases__primary-info-heading {
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+  }
+
+  .cases__primary-info-cta {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .cases__secondary-info {
+    width: 100%;
+    max-width: none;
+    margin: 322px 0 0;
+  }
+
+  .cases__secondary-info-heading {
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+  }
+
+  .cases__secondary-info-paragraph {
+    margin-left: auto;
+  }
+
+  .cases__secondary-info-cta {
+    width: 100%;
+    margin-top: 2rem;
   }
 }
 
