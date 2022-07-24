@@ -25,7 +25,13 @@ body {
   max-width: 100rem;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -269,34 +275,107 @@ h1, h2, h3, h4, h5, h6, p {
   color: var(--yellow-light);
 }
 
-/* responsivo */
+/* responsivo  1200px*/
 @media screen and (max-width: 75rem) {
   .main-header__container {
     padding: 0 2rem;
   }
+
+  .main-section {
+    padding: 0 2rem;
+  }
 }
 
+/* 1024px */
 @media screen and (max-width: 64rem) {
   .main-header__container {
     padding: 0 1.5rem;
   }
-}
 
-@media screen and (max-height: 39.0625rem) {
   .main-section {
-    margin-top: 72px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  
-  .main-section__founder-description-avatar {
-    width: 380px;
+
+  .main-section__company-description {
+    margin-top: 2rem;
+  }
+
+  .main-section__founder-description {
+    margin-top: 6.8125rem;
   }
 }
 
+/* 850px */
 @media screen and (max-width: 53.125rem) {
   .main-header__navigation {
     display: none;
   }
   .main-header__hamburger-menu {
     display: block;
+  }
+}
+
+/* 625px */
+@media screen and (max-height: 39.0625rem) {
+  .main-section {
+    margin-top: 72px;
+  }
+
+  .main-section__founder-description-avatar {
+    width: 380px;
+  }
+}
+
+/* 480px */
+@media screen and (max-width: 30rem) {
+  .main-section__company-description-heading {
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .main-section__company-description-paragraph {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .main-section__company-description-cta {
+    width: 100%;
+  }
+
+  .main-section__founder-description {
+    text-align: left;
+  }
+
+  .main-section__founder-description-avatar {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-section__founder-description-heading {
+    font-size: 2.1875rem;
+    line-height: 2.625rem;
+  }
+
+  .main-section__founder-description-subheading {
+    font-size: 1.125rem;
+    line-height: 1.4375rem;
+    margin-top: 1rem;
+  }
+
+  .main-section__founder-description-ig {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    margin-top: 56px;
+    text-align: center;
+  }
+}
+
+/* 350 px */
+@media screen and (max-width: 21.875rem) {
+  .main-header__logo {
+    display: none;
   }
 }
