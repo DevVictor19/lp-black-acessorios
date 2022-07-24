@@ -36,9 +36,24 @@ p {
   margin: 0;
 }
 
-a {
-  -webkit-tap-highlight-color: transparent !important;
-  outline: none !important;
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--yellow-light);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--white);
 }
 
 .heading {
@@ -333,6 +348,7 @@ a {
 
 .cases__secondary-info-heading {
   font-size: 4.4375rem;
+  font-weight: 400;
   line-height: 5.3125rem;
   letter-spacing: 1px;
 }
@@ -356,6 +372,83 @@ a {
   color: var(--black);
 }
 
+/* carregadores */
+.chargers {
+  padding: 7.5rem 4rem 12rem;
+  background-image: url("./images/carregadores-originais.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.chargers__primary-info {
+  max-width: 475px;
+  margin-left: auto;
+  text-align: right;
+  color: var(--yellow-light);
+}
+
+.chargers__primary-info-heading {
+  font-size: 6.3125rem;
+  font-weight: 400;
+  line-height: 7.5625rem;
+}
+
+.chargers__primary-info-paragraph {
+  max-width: 441px;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  margin-left: auto;
+  margin-top: 1rem;
+}
+
+.chargers__primary-info-cta {
+  margin-top: 2.5rem;
+  border: 2px solid var(--yellow-light);
+  color: var(--yellow-light);
+}
+
+.chargers__primary-info-cta:hover,
+.chargers__primary-info-cta:active {
+  background-color: var(--yellow-light);
+  color: var(--black);
+}
+
+.chargers__secondary-info {
+  margin-top: 18.4375rem;
+  max-width: 326px;
+  color: var(--white);
+}
+
+.chargers__secondary-info-heading {
+  font-weight: 400;
+  font-size: 4.4375rem;
+  line-height: 5.3125rem;
+}
+
+.chargers__secondary-info-paragraph {
+  margin-top: 1rem;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+}
+
+.chargers__secondary-info-cta {
+  margin-top: 2.5rem;
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.chargers__secondary-info-cta:hover,
+.chargers__secondary-info-cta:active {
+  background-color: var(--white);
+  color: var(--black);
+}
+
 /* responsivo  1200px*/
 @media screen and (max-width: 75rem) {
   .main-header__container {
@@ -367,6 +460,10 @@ a {
   }
 
   .cases {
+    padding: 7.5rem 2rem 12rem;
+  }
+
+  .chargers {
     padding: 7.5rem 2rem 12rem;
   }
 }
@@ -398,6 +495,10 @@ a {
   .cases {
     padding: 7.5rem 1.5rem 12rem;
   }
+
+  .chargers {
+    padding: 7.5rem 1.5rem 12rem;
+  }
 }
 
 /* 950px */
@@ -407,6 +508,10 @@ a {
   }
   .cases__secondary-info {
     margin-left: auto;
+  }
+
+  .chargers {
+    flex-direction: column;
   }
 }
 
@@ -428,6 +533,13 @@ a {
 
   .main-section__founder-description-avatar {
     width: 380px;
+  }
+}
+
+/* 520px */
+@media screen and (max-width: 32.5rem) {
+  .chargers__primary-info-heading {
+    font-size: 5.75rem;
   }
 }
 
@@ -501,6 +613,32 @@ a {
   }
 
   .cases__secondary-info-cta {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .chargers__primary-info-heading {
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+  }
+
+  .chargers__primary-info-cta {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .chargers__secondary-info {
+    width: 100%;
+    max-width: none;
+    margin: 322px 0 0;
+  }
+
+  .chargers__secondary-info-heading {
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+  }
+
+  .chargers__secondary-info-cta {
     width: 100%;
     margin-top: 2rem;
   }
