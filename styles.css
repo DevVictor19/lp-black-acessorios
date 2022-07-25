@@ -88,6 +88,7 @@ p {
   top: 0;
   left: 0;
   width: 100vw;
+  z-index: 1;
 }
 
 .main-header__container {
@@ -163,6 +164,7 @@ p {
 .mobile-menu {
   display: none;
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100vw;
@@ -430,6 +432,7 @@ p {
   color: var(--white);
 }
 
+
 /* fones de ouvido */
 .headphone {
   padding: 7.5rem 4rem 12rem;
@@ -458,6 +461,93 @@ p {
   text-align: right;
   margin-top: 18.4375rem;
 }
+
+/* contato */
+.contact-us {
+  position: relative;
+  padding: 7.5rem 4rem 7.875rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-us__avatar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.contact-us__ig-section-heading,
+.contact-us__wtsp-section-heading {
+  font-weight: 400;
+  font-size: 4.4375rem;
+  line-height: 5.3125rem;
+}
+
+.contact-us__ig-section-paragraph,
+.contact-us__wtsp-section-paragraph {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+}
+
+.contact-us__ig-section-heading,
+.contact-us__ig-section-paragraph {
+  color: var(--white);
+}
+
+.contact-us__wtsp-section-heading,
+.contact-us__wtsp-section-paragraph {
+  color: var(--yellow-light);
+  text-align: right;
+}
+
+.contact-us__ig-section {
+  max-width: 460px;
+}
+
+.contact-us__ig-section-actions {
+  max-width: 258px;
+  text-align: center;
+  margin-left: 37px;
+  margin-top: 68px;
+}
+
+.contact-us__ig-section-actions-ig_text {
+  font-size: 1.375rem;
+  line-height: 1.8125rem;
+}
+
+.contact-us__ig-section-actions-gradient_box {
+  margin-top: 1.5rem;
+  width: 262px;
+  height: 60px;
+  padding: 2px;
+  background: linear-gradient(90deg, #ff6a00 7.49%, #ee0979 100%);
+  border-radius: 8px;
+}
+
+.contact-us__ig-section-actions-gradient_box-cta {
+  border: 2px solid transparent;
+  padding-top: 11px;
+  background-color: var(--black);
+}
+
+.contact-us__ig-section-actions-gradient_box-cta:hover,
+.contact-us__ig-section-actions-gradient_box-cta:active {
+  background-color: transparent;
+}
+
+.contact-us__ig-section-actions-gradient_box-cta:hover
+.contact-us__ig-section-actions-gradient_box-cta-text,
+.contact-us__ig-section-actions-gradient_box-cta:active
+.contact-us__ig-section-actions-gradient_box-cta-text  {
+  -webkit-text-fill-color: var(--white);
+}
+
 
 /* responsivo  1200px*/
 @media screen and (max-width: 75rem) {
