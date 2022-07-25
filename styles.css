@@ -296,6 +296,75 @@ p {
   color: var(--yellow-light);
 }
 
+/* configs gerais */
+.cases__primary-info-heading,
+.chargers__primary-info-heading,
+.headphone__primary-info-heading {
+  font-weight: 400;
+  font-size: 6.3125rem;
+  line-height: 7.5625rem;
+}
+
+.cases__primary-info-paragraph,
+.chargers__primary-info-paragraph,
+.headphone__primary-info-paragraph {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  margin-top: 1rem;
+}
+
+.cases__primary-info-cta,
+.chargers__primary-info-cta,
+.headphone__primary-info-cta {
+  border: 2px solid var(--yellow-light);
+  color: var(--yellow-light);
+  margin-top: 2.5rem;
+}
+
+.cases__primary-info-cta:hover,
+.cases__primary-info-cta:active,
+.chargers__primary-info-cta:hover,
+.chargers__primary-info-cta:active,
+.headphone__primary-info-cta:hover,
+.headphone__primary-info-cta:active {
+  background-color: var(--yellow-light);
+  color: var(--black);
+}
+
+.cases__secondary-info-heading,
+.chargers__secondary-info-heading,
+.headphone__secondary-info-heading {
+  font-size: 4.4375rem;
+  font-weight: 400;
+  line-height: 5.3125rem;
+}
+
+.cases__secondary-info-paragraph,
+.chargers__secondary-info-paragraph,
+.headphone__secondary-info-paragraph {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  margin-top: 1rem;
+}
+
+.cases__secondary-info-cta,
+.chargers__secondary-info-cta,
+.headphone__secondary-info-cta {
+  border: 2px solid var(--white);
+  color: var(--white);
+  margin-top: 2.5rem;
+}
+
+.cases__secondary-info-cta:hover,
+.cases__secondary-info-cta:active,
+.chargers__secondary-info-cta:hover,
+.chargers__secondary-info-cta:active,
+.headphone__secondary-info-cta:hover,
+.headphone__secondary-info-cta:active {
+  background-color: var(--white);
+  color: var(--black);
+}
+
 /* capas */
 .cases {
   padding: 7.5rem 4rem 12rem;
@@ -314,29 +383,8 @@ p {
   color: var(--yellow-light);
 }
 
-.cases__primary-info-heading {
-  font-weight: 400;
-  font-size: 6.3125rem;
-  line-height: 7.5625rem;
-}
-
 .cases__primary-info-paragraph {
   max-width: 370px;
-  font-size: 1.75rem;
-  line-height: 2.25rem;
-  margin-top: 1rem;
-}
-
-.cases__primary-info-cta {
-  border: 2px solid var(--yellow-light);
-  color: var(--yellow-light);
-  margin-top: 2.5rem;
-}
-
-.cases__primary-info-cta:hover,
-.cases__primary-info-cta:active {
-  background-color: var(--yellow-light);
-  color: var(--black);
 }
 
 .cases__secondary-info {
@@ -346,30 +394,8 @@ p {
   color: var(--white);
 }
 
-.cases__secondary-info-heading {
-  font-size: 4.4375rem;
-  font-weight: 400;
-  line-height: 5.3125rem;
-  letter-spacing: 1px;
-}
-
 .cases__secondary-info-paragraph {
   max-width: 320px;
-  font-size: 1.75rem;
-  line-height: 2.25rem;
-  margin-top: 1rem;
-}
-
-.cases__secondary-info-cta {
-  border: 2px solid var(--white);
-  color: var(--white);
-  margin-top: 2.5rem;
-}
-
-.cases__secondary-info-cta:hover,
-.cases__secondary-info-cta:active {
-  background-color: var(--white);
-  color: var(--black);
 }
 
 /* carregadores */
@@ -393,60 +419,15 @@ p {
   color: var(--yellow-light);
 }
 
-.chargers__primary-info-heading {
-  font-size: 6.3125rem;
-  font-weight: 400;
-  line-height: 7.5625rem;
-}
-
 .chargers__primary-info-paragraph {
   max-width: 441px;
-  font-size: 1.75rem;
-  line-height: 2.25rem;
   margin-left: auto;
-  margin-top: 1rem;
-}
-
-.chargers__primary-info-cta {
-  margin-top: 2.5rem;
-  border: 2px solid var(--yellow-light);
-  color: var(--yellow-light);
-}
-
-.chargers__primary-info-cta:hover,
-.chargers__primary-info-cta:active {
-  background-color: var(--yellow-light);
-  color: var(--black);
 }
 
 .chargers__secondary-info {
   margin-top: 18.4375rem;
   max-width: 326px;
   color: var(--white);
-}
-
-.chargers__secondary-info-heading {
-  font-weight: 400;
-  font-size: 4.4375rem;
-  line-height: 5.3125rem;
-}
-
-.chargers__secondary-info-paragraph {
-  margin-top: 1rem;
-  font-size: 1.75rem;
-  line-height: 2.25rem;
-}
-
-.chargers__secondary-info-cta {
-  margin-top: 2.5rem;
-  border: 2px solid var(--white);
-  color: var(--white);
-}
-
-.chargers__secondary-info-cta:hover,
-.chargers__secondary-info-cta:active {
-  background-color: var(--white);
-  color: var(--black);
 }
 
 /* fones de ouvido */
@@ -467,29 +448,8 @@ p {
   color: var(--yellow-light);
 }
 
-.headphone__primary-info-heading {
-  font-size: 6.3125rem;
-  font-weight: 400;
-  line-height: 7.5625rem;
-}
-
 .headphone__primary-info-paragraph {
   max-width: 484px;
-  font-size: 1.75rem;
-  line-height: 2.25rem;
-  margin-top: 1rem;
-}
-
-.headphone__primary-info-cta {
-  margin-top: 2.5rem;
-  border: 2px solid var(--yellow-light);
-  color: var(--yellow-light);
-}
-
-.headphone__primary-info-cta:hover,
-.headphone__primary-info-cta:active {
-  background-color: var(--yellow-light);
-  color: var(--black);
 }
 
 .headphone__secondary-info {
@@ -497,30 +457,6 @@ p {
   color: var(--white);
   text-align: right;
   margin-top: 18.4375rem;
-}
-
-.headphone__secondary-info-heading {
-  font-weight: 400;
-  font-size: 4.4375rem;
-  line-height: 5.3125rem;
-}
-
-.headphone__secondary-info-paragraph {
-  margin-top: 1rem;
-  font-size: 1.75rem;
-  line-height: 2.25rem;
-}
-
-.headphone__secondary-info-cta {
-  margin-top: 2.5rem;
-  border: 2px solid var(--white);
-  color: var(--white);
-}
-
-.headphone__secondary-info-cta:hover,
-.headphone__secondary-info-cta:active {
-  background-color: var(--white);
-  color: var(--black);
 }
 
 /* responsivo  1200px*/
