@@ -449,6 +449,80 @@ p {
   color: var(--black);
 }
 
+/* fones de ouvido */
+.headphone {
+  padding: 7.5rem 4rem 12rem;
+  background-image: url("./images/fones-bluetooth.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.headphone__primary-info {
+  max-width: 558px;
+  color: var(--yellow-light);
+}
+
+.headphone__primary-info-heading {
+  font-size: 6.3125rem;
+  font-weight: 400;
+  line-height: 7.5625rem;
+}
+
+.headphone__primary-info-paragraph {
+  max-width: 484px;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  margin-top: 1rem;
+}
+
+.headphone__primary-info-cta {
+  margin-top: 2.5rem;
+  border: 2px solid var(--yellow-light);
+  color: var(--yellow-light);
+}
+
+.headphone__primary-info-cta:hover,
+.headphone__primary-info-cta:active {
+  background-color: var(--yellow-light);
+  color: var(--black);
+}
+
+.headphone__secondary-info {
+  max-width: 353px;
+  color: var(--white);
+  text-align: right;
+  margin-top: 18.4375rem;
+}
+
+.headphone__secondary-info-heading {
+  font-weight: 400;
+  font-size: 4.4375rem;
+  line-height: 5.3125rem;
+}
+
+.headphone__secondary-info-paragraph {
+  margin-top: 1rem;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+}
+
+.headphone__secondary-info-cta {
+  margin-top: 2.5rem;
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.headphone__secondary-info-cta:hover,
+.headphone__secondary-info-cta:active {
+  background-color: var(--white);
+  color: var(--black);
+}
+
 /* responsivo  1200px*/
 @media screen and (max-width: 75rem) {
   .main-header__container,
