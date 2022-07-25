@@ -467,7 +467,8 @@ p {
   }
 
   .cases,
-  .chargers {
+  .chargers,
+  .headphone {
     padding: 7.5rem 2rem 12rem;
   }
 }
@@ -494,20 +495,26 @@ p {
   }
 
   .cases,
-  .chargers {
+  .chargers,
+  .headphone {
     padding: 7.5rem 1.5rem 12rem;
   }
 }
 
 /* 950px */
 @media screen and (max-width: 60.3125rem) {
+  .cases,
+  .chargers,
+  .headphone {
+    flex-direction: column;
+  }
+
   .cases__secondary-info {
     margin-left: auto;
   }
 
-  .cases,
-  .chargers {
-    flex-direction: column;
+  .headphone__secondary-info {
+    margin-left: auto;
   }
 }
 
@@ -583,10 +590,26 @@ p {
     text-align: center;
   }
 
+  .cases__secondary-info,
+  .chargers__secondary-info,
+  .headphone__secondary-info {
+    width: 100%;
+    max-width: none;
+    margin: 322px 0 0;
+  }
+
+  .cases__secondary-info,
+  .chargers__primary-info,
+  .headphone__secondary-info {
+    text-align: left;
+  }
+
   .cases__primary-info-heading,
   .cases__secondary-info-heading,
   .chargers__primary-info-heading,
-  .chargers__secondary-info-heading {
+  .chargers__secondary-info-heading,
+  .headphone__primary-info-heading,
+  .headphone__secondary-info-heading {
     font-size: 3.125rem;
     line-height: 3.75rem;
   }
@@ -594,25 +617,11 @@ p {
   .cases__primary-info-cta,
   .cases__secondary-info-cta,
   .chargers__primary-info-cta,
-  .chargers__secondary-info-cta {
+  .chargers__secondary-info-cta,
+  .headphone__primary-info-cta,
+  .headphone__secondary-info-cta {
     width: 100%;
     margin-top: 2rem;
-  }
-
-  .cases__secondary-info {
-    width: 100%;
-    max-width: none;
-    margin: 322px 0 0;
-  }
-
-  .cases__secondary-info-paragraph {
-    margin-left: auto;
-  }
-
-  .chargers__secondary-info {
-    width: 100%;
-    max-width: none;
-    margin: 322px 0 0;
   }
 }
 
