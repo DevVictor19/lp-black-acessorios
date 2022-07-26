@@ -600,7 +600,13 @@ p {
   .cases,
   .chargers,
   .headphone {
-    padding: 7.5rem 2rem 12rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .contact-us {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -628,11 +634,17 @@ p {
   .cases,
   .chargers,
   .headphone {
-    padding: 7.5rem 1.5rem 12rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .contact-us {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
-/* 950px */
+/* 965px */
 @media screen and (max-width: 60.3125rem) {
   .cases,
   .chargers,
@@ -647,6 +659,41 @@ p {
   .headphone__secondary {
     margin-left: auto;
   }
+
+  .contact-us {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-us__avatar {
+    display: none;
+  }
+
+  .contact-us__meet-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-us__message {
+    margin-top: 9.5rem;
+    max-width: 460px;
+  }
+
+  .contact-us__message-heading,
+  .contact-us__message-paragraph {
+    text-align: left;
+  }
+
+  .contact-us__meet-paragraph,
+  .contact-us__message-paragraph {
+    width: 100%;
+  }
+
+  .contact-us__message-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 /* 850px */
@@ -752,7 +799,12 @@ p {
   .headphone__primary-cta,
   .headphone__secondary-cta {
     width: 100%;
-    margin-top: 2rem;
+  }
+
+  .contact-us__meet-heading,
+  .contact-us__message-heading {
+    font-size: 3.125rem;
+    line-height: 3.75rem;
   }
 }
 
