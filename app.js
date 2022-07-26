@@ -2,7 +2,7 @@ const hamburgerMenuBtn = document.querySelector(".main-header__hamburger-menu");
 const closeMenuBtn = document.querySelector(".mobile-menu__closebtn");
 const mobileMenu = document.querySelector(".mobile-menu");
 const mobileMenuLinks = document.querySelectorAll(
-  ".mobile-menu__navigation-list-item a"
+  ".mobile-menu__link"
 );
 
 function showMobileMenu() {
