@@ -590,6 +590,118 @@ p {
   color: var(--black);
 }
 
+/* clientes */
+.clients {
+  padding: 4rem 4rem 13.375rem;
+}
+
+.clients__header {
+  max-width: 458px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clients__heading {
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 3.75rem;
+  color: var(--yellow-light);
+}
+
+.clients__paragraph {
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  color: var(--white);
+}
+
+.clients__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4.5rem;
+}
+
+.clients__card {
+  background-color: #131423;
+  max-width: 391.33px;
+  height: 296px;
+  padding: 24px;
+}
+
+.clients__avatar-circle {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid var(--yellow-light);
+}
+
+.clients__img {
+  display: inline-block;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.clients__name {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  color: var(--yellow-light);
+  vertical-align: top;
+  margin-top: 8px;
+  margin-right: 40px;
+  margin-left: 16px;
+}
+
+.clients__stars {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 12px;
+}
+
+.clients__comment {
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  color: var(--white);
+  margin-top: 1.5rem;
+}
+
+.clients__comment-date {
+  display: inline-block;
+  font-weight: 275;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  color: var(--yellow-light);
+  border-bottom: 1px solid var(--yellow-light);
+  margin-top: 1.5rem;
+}
+
+.clients__star--toggle path {
+  fill: var(--yellow-light);
+}
+
+.clients__slider {
+  width: 62px;
+  margin: 5rem auto 0;
+}
+
+.clients__ball {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--yellow-light);
+  border-radius: 50px;
+}
+
+.clients__ball:nth-child(2) {
+  margin: 0 8px;
+}
+
+.clients__ball--active {
+  background-color: var(--yellow-light);
+}
+
 /* responsivo  1200px*/
 @media screen and (max-width: 75rem) {
   .main-header__container,
