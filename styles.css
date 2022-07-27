@@ -249,7 +249,7 @@ p {
   max-width: 619px;
 }
 
-.main-section__company-heading{
+.main-section__company-heading {
   margin-bottom: 2rem;
   font-size: 4.4375rem;
   line-height: 5.3125rem;
@@ -432,7 +432,6 @@ p {
   color: var(--white);
 }
 
-
 /* fones de ouvido */
 .headphone {
   padding: 7.5rem 4rem 12rem;
@@ -546,10 +545,8 @@ p {
   background-color: transparent;
 }
 
-.contact-us__meet-cta:hover
-.contact-us__meet-cta-text,
-.contact-us__meet-cta:active
-.contact-us__meet-cta-text  {
+.contact-us__meet-cta:hover .contact-us__meet-cta-text,
+.contact-us__meet-cta:active .contact-us__meet-cta-text {
   -webkit-text-fill-color: var(--white);
 }
 
@@ -652,7 +649,6 @@ p {
   vertical-align: top;
   margin-top: 8px;
   margin-right: 40px;
- 
 }
 
 .clients__stars {
@@ -696,7 +692,6 @@ p {
   border-radius: 50px;
   margin: 0 4px;
 }
-
 
 .clients__ball--active {
   background-color: var(--yellow-light);
@@ -744,7 +739,7 @@ p {
   .cases,
   .chargers,
   .headphone,
-  .contact-us, 
+  .contact-us,
   .clients {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -814,7 +809,6 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
-
 }
 
 /* 850px */
@@ -851,7 +845,7 @@ p {
 
 /* 480px */
 @media screen and (max-width: 30rem) {
-  .main-section__company-heading{
+  .main-section__company-heading {
     font-size: 3.125rem;
     line-height: 3.75rem;
     margin-bottom: 1.5rem;
