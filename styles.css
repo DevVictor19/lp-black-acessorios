@@ -624,7 +624,7 @@ p {
 .clients__card {
   background-color: #131423;
   max-width: 391.33px;
-  height: 296px;
+  min-height: 296px;
   padding: 24px;
 }
 
@@ -634,6 +634,7 @@ p {
   height: 64px;
   border-radius: 50%;
   border: 2px solid var(--yellow-light);
+  margin-right: 16px;
 }
 
 .clients__img {
@@ -651,7 +652,7 @@ p {
   vertical-align: top;
   margin-top: 8px;
   margin-right: 40px;
-  margin-left: 16px;
+ 
 }
 
 .clients__stars {
@@ -682,40 +683,42 @@ p {
 }
 
 .clients__slider {
-  width: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 5rem auto 0;
 }
 
 .clients__ball {
-  display: inline-block;
   width: 12px;
   height: 12px;
   border: 1px solid var(--yellow-light);
   border-radius: 50px;
+  margin: 0 4px;
 }
 
-.clients__ball:nth-child(2) {
-  margin: 0 8px;
-}
 
 .clients__ball--active {
   background-color: var(--yellow-light);
 }
 
+@media screen and (max-width: 85.3125rem) {
+  .clients__cards {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .clients__card {
+    margin-top: 1.5rem;
+  }
+}
+
 /* responsivo  1200px*/
 @media screen and (max-width: 75rem) {
   .main-header__container,
-  .main-section {
-    padding: 0 2rem;
-  }
-
+  .main-section,
   .cases,
   .chargers,
-  .headphone {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
+  .headphone,
   .contact-us {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -725,8 +728,14 @@ p {
 /* 1024px */
 @media screen and (max-width: 64rem) {
   .main-header__container,
-  .main-section {
-    padding: 0 1.5rem;
+  .main-section,
+  .cases,
+  .chargers,
+  .headphone,
+  .contact-us, 
+  .clients {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .main-section {
@@ -741,18 +750,6 @@ p {
 
   .main-section__founder {
     margin-top: 6.8125rem;
-  }
-
-  .cases,
-  .chargers,
-  .headphone {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .contact-us {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
   }
 }
 
@@ -833,6 +830,10 @@ p {
 @media screen and (max-width: 32.5rem) {
   .chargers__primary-heading {
     font-size: 5.75rem;
+  }
+
+  .clients__heading {
+    font-size: 2.1875rem;
   }
 }
 
